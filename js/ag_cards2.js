@@ -5,7 +5,7 @@
    Tutorial 14
    Review Assignment
 
-   Author: 
+   Author: Elizanna Hahn
    Date:   
 
    Filename: ag_cards2.js
@@ -52,15 +52,22 @@ var squareGame = {
          columnHand.cards[i] = this.cardGrid[i].cards[index];
       }
       return columnHand.handPoints();
-   }
+   },
+   gameTotal: 0,
+   winTotal: 50,
+   gameresult: function() {
+      if (this.gameTotal >= this.winTotal) {
+         return "Winner";
+      } else {
+         return "No Winner";
+      }
+   },
 };
 
-
-
-
-
-
-
+//method to insert a card into a poker heand at a specified index
+pokerHand.prototype.insertCard = function (card, index) {
+   this.cards[index] = card;
+};
 
 
 /* ------- Poker Style Custom Objects ---------- */

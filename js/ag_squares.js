@@ -25,4 +25,22 @@ function playPokerSquares() {
    
 }
                                
+startButton.onclick = function() {
+   squareGame.gameTotal = 0;
+   gameScore.value = "";
+   gameResult.textContent = "";
+   for (var i = 0; i < rowSumCells.length; i++) {
+      rowSumCells[i].textContent = "";
+   }
 
+   for (var i = 0; i < colSumCells.length; i++) {
+      colSumCells[i].textContent = "";
+}
+
+for (var i = 0; i < cardImages.length; i++) {
+   cardImages[i].textContent = "";
+}
+
+
+
+}
