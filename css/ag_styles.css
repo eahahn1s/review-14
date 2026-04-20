@@ -2,8 +2,8 @@
 
 @font-face {
    font-family: Origicide;
-   src: url(ag_origicide.woff) format('woff'), 
-        url(ag_origicide.ttf) format('truetype');
+   src: url(../font/ag_origicide.woff) format('woff'), 
+        url(../font/ag_origicide.ttf) format('truetype');
 }
 
 /*
